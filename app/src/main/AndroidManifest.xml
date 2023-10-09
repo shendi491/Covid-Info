@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.broadbandmultimedia.covidinfo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/covid_logo"
+        android:label="Covid Info"
+        android:roundIcon="@drawable/covid_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.covidinfo"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".edit_profile"
+            android:exported="true" />
+        <activity
+            android:name=".reset_password"
+            android:exported="true" />
+        <activity
+            android:name=".view.activities.DetailHospitalsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activities.HospitalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activities.KotaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".view.activities.ProvinceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CovidInfo"
+            android:exported="true" />
+        <activity
+            android:name=".activity.profile"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDrjkwaoxbonAPUiVi07IaUVyPxxqSxKGc"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
